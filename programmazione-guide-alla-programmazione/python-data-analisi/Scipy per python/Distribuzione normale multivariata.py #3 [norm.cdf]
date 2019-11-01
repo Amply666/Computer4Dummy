@@ -1,0 +1,9 @@
+from scipy.stats import norm
+import numpy as np
+ 
+r = np.random.randn(10)
+norm.cdf(r)
+
+Out[23]: 
+array([0.90502257, 0.03043402, 0.4507643 , 0.36926628, 0.7140085 ,
+       0.35261915, 0.06725519, 0.22338959, 0.91171317, 0.16185243])
