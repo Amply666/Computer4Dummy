@@ -1,0 +1,26 @@
+<html>
+
+  <head>
+    <title>02 Scambiare il valore di due variabili</title>
+  </head>
+
+  <body>
+    <h1>02 Scambiare il valore tra due variabili</h1>
+    <br>
+    <b>Prima: </b><span id="test_prima">...</span>
+    <hr>
+    <b>Dopo: </b><span id="test_dopo">...</span>
+  </body>
+
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  let a = 1;
+  let b = 2;
+
+  $('#test_prima').html("a: " + a + " b: " + b);
+  [a, b] = [b, a];
+  $('#test_dopo').html("a: " + a + " b: " + b);
+});
+</script>
